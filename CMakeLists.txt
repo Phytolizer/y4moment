@@ -6,3 +6,5 @@ project(
     DESCRIPTION "That moment when YUV4MPEG2"
     HOMEPAGE_URL "https://github.com/Phytolizer/y4moment.git"
 )
+
+add_executable(y4moment source/main.c)
