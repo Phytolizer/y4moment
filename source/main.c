@@ -33,13 +33,13 @@ static ycbcr_t rgb_to_ycbcr(rgb_t c) {
 static void dump_frame(FILE* fp, ycbcr_t color) {
     fprintf(fp, "FRAME\n");
     for (size_t i = 0; i < FRAME_SIZE; i += 1) {
-        fputc((int)color.y, fp);
+        fputc((uint8_t)color.y, fp);
     }
     for (size_t i = 0; i < FRAME_SIZE; i += 1) {
-        fputc((int)color.cb, fp);
+        fputc((uint8_t)color.cb, fp);
     }
     for (size_t i = 0; i < FRAME_SIZE; i += 1) {
-        fputc((int)color.cr, fp);
+        fputc((uint8_t)color.cr, fp);
     }
 }
 
